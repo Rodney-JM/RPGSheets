@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Night warrior";
+    src: url(../assets/fonts/Nightwarrior.ttf);
+}
+
