@@ -1,5 +1,10 @@
-import buttonAnimation from '../scripts/Button';
+const arrow = document.querySelector("#arrow");
+const btn = document.querySelector("#btn");
 
-document.addEventListener('DOMContentLoaded', () => {
-    buttonAnimation();
+btn.addEventListener('mouseover', () => {
+    arrow.classList.remove('arrow');
+
+    setTimeout(() => {
+        arrow.classList.add('arrow');
+    }, 10); 
 });

@@ -1,12 +1,13 @@
 .arrow{
-    animation: arrowClick 2s ease-in;
+    animation: arrowClick 3s ease-in forwards;
 }
+
 
 @keyframes arrowClick{
     0%{
         transform: rotate(0deg);
     }
-    100%{
+    30%{
         transform: rotate(90deg);
     }
 }
