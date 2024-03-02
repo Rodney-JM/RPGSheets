@@ -1,0 +1,12 @@
+.arrow{
+    animation: arrowClick 2s ease-in;
+}
+
+@keyframes arrowClick{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}

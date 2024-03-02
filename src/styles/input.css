@@ -1,3 +1,5 @@
+@import url(animations.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,6 +18,21 @@
         width: 100%;
         height: 100%;
         background-color: black;
+        opacity: .65;
+    }
+    .btn{
+        @apply flex items-center text-red-50 mt-16 text-4xl bg-red-500 px-12 py-6 rounded-sm font-chakra cursor-pointer transition-all hover:bg-red-600 active:bg-red-700;
+    }
+}
+
+@layer utilities{
+    .no-opacity{
+        background-clip: padding-box;/* isola o conteudo do fundo */
+        position: relative;
+        z-index: 1;
+    }
+    .enf{
+       @apply text-red-500 font-semibold font-chakra; 
     }
 }
 
