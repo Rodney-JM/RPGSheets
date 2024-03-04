@@ -23,6 +23,9 @@
     .btn{
         @apply flex items-center text-red-50 mt-16 text-4xl bg-red-500 px-12 py-6 rounded-sm font-chakra cursor-pointer transition-all hover:bg-red-600 active:bg-red-700;
     }
+    .menu-item{
+        @apply flex justify-between items-center font-chakra;
+    }
 }
 
 @layer utilities{
@@ -34,6 +37,7 @@
     .enf{
        @apply text-red-500 font-semibold font-chakra; 
     }
-    
+    .none{
+        display: none;
+    }
 }
-

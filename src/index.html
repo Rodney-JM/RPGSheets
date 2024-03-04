@@ -15,21 +15,28 @@
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body>
-    <header class="w-full bg-black">
+    <header class="w-full bg-black z-20">
         <div class="text-red-100 flex justify-between items-center px-10">
             <div class="flex items-center p-6">
                 <img src="./assets/icons/logo_DND.png" alt="DND LOGO" class="w-[60px]">
                 <p class="font-semibold font-chakra text-4xl max-sm:text-xl">Dungeons and <br>Dragons</p>
             </div>
             <div>
-                <i class='bx bx-menu text-6xl cursor-pointer max-sm:text-4xl'></i>
+                <i class='bx bx-menu text-6xl cursor-pointer max-sm:text-4xl z-30  menu'></i>
             </div>
         </div>
     </header>
-    <nav>
+    <nav class="fixed right-0 top-0 z-20 h-screen bg-menubg w-[40%]   none nav">
+        <ul class="text-4xl text-red-50 px-10 py-8 space-y-10">
+            <i class='bx bx-menu text-6xl cursor-pointer max-sm:text-4xl flex justify-end  menu'></i>
+            <li class="menu-item">Introdução<i class="bx bxs-right-arrow arrow"></i></li>
+            <li class="menu-item">Raças<i class="bx bxs-right-arrow arrow"></i></li>
+            <li class="menu-item">Classes<i class="bx bxs-right-arrow arrow"></i></li>
+            <li class="menu-item">Antecedentes<i class="bx bxs-right-arrow arrow"></i></li>
+        </ul>
     </nav>
     <main class="relative">
-        <section class="relative h-screen bg-homebg bg-cover opacity-100 h-screen w-full flex items-center justify-center px-4 bgtrans max-lg:flex-col">
+        <section class="relative h-screen bg-homebg bg-cover opacity-100 h-screen w-full flex items-center justify-center px-4 bgtrans max-lg:flex-col z-10">
             <div class="flex flex-col items-center justify-center no-opacity text-center max-w-full max-sm:h-[55%] max-sm:w-[70%]">
                 <h2 class="text-8xl text-red-50 font-semibold font-chakra max-lg:text-4xl max-sm:text-3xl">Aprenda a fazer<br> a sua ficha <br><span class="text-9xl font-palanquin text-red-500 font-bold max-lg:text-6xl max-sm:text-4xl">D&D</span></h2>
                 <p class="text-red-50 text-4xl text-center font-palanquin mt-14 max-lg:mt-8 max-lg:text-3xl max-sm:text-2xl max-sm:mx-auto">Querendo se divertir com o vasto mundo de D&D?<br> Use nossa plataforma para conseguir fazer a <br>sua ficha de forma <span class="enf">SIMPLES</span> e <span class="enf">FÁCIL</span></p>

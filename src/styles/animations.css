@@ -11,3 +11,16 @@
         transform: rotate(90deg);
     }
 }
+
+nav.active{
+    animation: translate 3s ease-in .5s linear backwards;
+}
+
+@keyframes translate{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}

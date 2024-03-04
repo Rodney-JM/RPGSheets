@@ -9,6 +9,9 @@ module.exports = {
       },
       backgroundImage:{
         homebg: 'url(/src/assets/images/home-bg.jpg)'
+      },
+      colors:{
+        menubg: '#5b0000',
       }
     },
   },

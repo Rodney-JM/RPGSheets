@@ -12,6 +12,20 @@
   }
 }
 
+nav.active{
+  animation: translate 3s ease-in .5s linear backwards;
+}
+
+@keyframes translate{
+  0%{
+    transform: translateX(0%);
+  }
+
+  100%{
+    transform: translateX(100%);
+  }
+}
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -601,8 +615,39 @@ video {
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
+.menu-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Chakra Petch, sans-serif;
+}
+
+.fixed{
+  position: fixed;
+}
+
 .relative{
   position: relative;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.z-30{
+  z-index: 30;
 }
 
 .ml-4{
@@ -619,6 +664,10 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.w-\[40\%\]{
+  width: 40%;
 }
 
 .w-\[60px\]{
@@ -645,6 +694,10 @@ video {
   align-items: center;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -653,9 +706,20 @@ video {
   justify-content: space-between;
 }
 
+.space-y-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-menubg{
+  --tw-bg-opacity: 1;
+  background-color: rgb(91 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-homebg{
@@ -678,6 +742,11 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-center{
@@ -758,6 +827,10 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.none{
+  display: none;
+}
+
 @font-face {
   font-family: "Night warrior";
 
@@ -832,4 +905,3 @@ video {
     line-height: 1.75rem;
   }
 }
-
