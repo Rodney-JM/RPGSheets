@@ -12,15 +12,14 @@
     }
 }
 
-nav.active{
-    animation: translate 3s ease-in .5s linear backwards;
+.navIn{
+    animation: slideIn 2s ease-in forwards;
 }
 
-@keyframes translate{
-    0%{
-        transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(100%);
+@keyframes slideIn {
+    from{
+        right: -100%;
+    }to{
+        right: 0;
     }
 }

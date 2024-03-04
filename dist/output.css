@@ -12,17 +12,31 @@
   }
 }
 
-nav.active{
-  animation: translate 3s ease-in .5s linear backwards;
+.navIn{
+  animation: slideIn .5s ease-in forwards;
 }
 
-@keyframes translate{
-  0%{
-    transform: translateX(0%);
+@keyframes slideIn {
+  from{
+    right: -100%;
   }
 
-  100%{
-    transform: translateX(100%);
+  to{
+    right: 0;
+  }
+}
+
+.navOut{
+  animation: slideOff .5s ease-in backwards;
+}
+
+@keyframes slideOff {
+  from{
+    right: 0;
+  }
+
+  to{
+    right: -100%;
   }
 }
 

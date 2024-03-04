@@ -17,10 +17,11 @@ btn.addEventListener('mouseover', () => {
 });
 
 /* menu click */
+let numberTime = 1;
 menuSymbols.forEach((menuSymbol)=>{
     menuSymbol.addEventListener('click', ()=>{
         menuNav.classList.toggle('none');
-        menuNav.classList.toggle('active');
+        menuNav.classList.toggle('navIn');
     })
 })
 /* menu click */
