@@ -44,6 +44,6 @@
         display: none;
     }
     .span-item{
-        @apply flex justify-between;
+        @apply flex justify-between items-center;
     }
 }
