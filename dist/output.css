@@ -12,32 +12,32 @@
   }
 }
 
-.navIn{
-  animation: slideIn .5s ease-in forwards;
-}
-
-@keyframes slideIn {
-  from{
-    right: -100%;
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
   }
 
-  to{
-    right: 0;
+  100% {
+    transform: translateX(0);
   }
 }
 
-.navOut{
-  animation: slideOff .5s ease-in backwards;
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
 }
 
-@keyframes slideOff {
-  from{
-    right: 0;
-  }
+nav {
+  animation: slide-out 0.5s forwards;
+}
 
-  to{
-    right: -100%;
-  }
+nav.mostrar {
+  animation: slide-in 0.5s forwards;
 }
 
 /*
@@ -630,10 +630,36 @@ video {
 }
 
 .menu-item{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  cursor: pointer;
+  padding: 1.75rem;
   font-family: Chakra Petch, sans-serif;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.menu-item:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 3 4 / var(--tw-bg-opacity));
+}
+
+.menu-item:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 2 2 / var(--tw-bg-opacity));
+}
+
+.menu-item li{
+  margin-left: 20%;
+  cursor: pointer;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu-item li:hover{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .fixed{
@@ -720,10 +746,10 @@ video {
   justify-content: space-between;
 }
 
-.space-y-10 > :not([hidden]) ~ :not([hidden]){
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .bg-black{
@@ -733,7 +759,7 @@ video {
 
 .bg-menubg{
   --tw-bg-opacity: 1;
-  background-color: rgb(91 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(56 4 5 / var(--tw-bg-opacity));
 }
 
 .bg-homebg{
@@ -843,6 +869,11 @@ video {
 
 .none{
   display: none;
+}
+
+.span-item{
+  display: flex;
+  justify-content: space-between;
 }
 
 @font-face {

@@ -11,15 +11,28 @@
         transform: rotate(90deg);
     }
 }
-
-.navIn{
-    animation: slideIn 2s ease-in forwards;
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
-@keyframes slideIn {
-    from{
-        right: -100%;
-    }to{
-        right: 0;
+@keyframes slide-out {
+    0% {
+        transform: translateX(0);
     }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+nav {
+    animation: slide-out 0.5s forwards;
+}
+
+nav.mostrar {
+    animation: slide-in 0.5s forwards;
 }

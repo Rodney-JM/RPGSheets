@@ -24,7 +24,10 @@
         @apply flex items-center text-red-50 mt-16 text-4xl bg-red-500 px-12 py-6 rounded-sm font-chakra cursor-pointer transition-all hover:bg-red-600 active:bg-red-700;
     }
     .menu-item{
-        @apply flex justify-between items-center font-chakra;
+        @apply cursor-pointer font-chakra w-[100%] max-w-[100%] transition-all hover:bg-menuHover active:bg-menuActive p-7;
+    }
+    .menu-item li{
+        @apply ml-[20%] py-4 cursor-pointer hover:text-gray-400;
     }
 }
 
@@ -40,5 +43,7 @@
     .none{
         display: none;
     }
-    
+    .span-item{
+        @apply flex justify-between;
+    }
 }

@@ -11,7 +11,9 @@ module.exports = {
         homebg: 'url(/src/assets/images/home-bg.jpg)'
       },
       colors:{
-        menubg: '#5b0000',
+        menubg: '#380405',
+        menuHover: '#2d0304',
+        menuActive: '#210202'
       }
     },
   },
