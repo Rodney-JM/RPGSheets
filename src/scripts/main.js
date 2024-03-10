@@ -51,7 +51,7 @@ lists.forEach((list)=>{
         if(subItems[listName]){
             for(let i=0;i<3;i++){
                 let newSubItem = document.createElement('a');
-                newSubItem.setAttribute("href","#");
+                newSubItem.setAttribute('href', `${subItems[listName][i]}`+ '.html');
                 newSubItem.innerHTML = subItems[listName][i] + '<br>';
                 list.appendChild(newSubItem);
             }
