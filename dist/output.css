@@ -771,7 +771,7 @@ video {
 }
 
 .bg-homebg{
-  background-image: url(/src/assets/images/home-bg.jpg);
+  background-image: url(src/assets/images/home-bg.jpg);
 }
 
 .bg-cover{

@@ -8,7 +8,7 @@ module.exports = {
         chakra:[ 'Chakra Petch', "sans-serif"],
       },
       backgroundImage:{
-        homebg: 'url(/src/assets/images/home-bg.jpg)'
+        homebg: 'url(src/assets/images/home-bg.jpg)'
       },
       colors:{
         menubg: '#380405',
